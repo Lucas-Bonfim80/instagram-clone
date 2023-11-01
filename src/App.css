@@ -1,0 +1,325 @@
+/*variaveis*/
+:root {
+  --fundo: rgb(250, 250, 250);
+}
+
+* {
+  background-color: var(--fundo);
+  margin: 0%;
+  padding: 0%;
+  font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+
+main {
+  background: var(--fundo);
+  display: flex;
+}
+
+.ladodireito {
+  max-height: 100vh;
+  width: 30vw;
+}
+
+
+.ladoesquerdo {
+  width: 16vw;
+  border-right: solid rgb(219, 219, 219) 0.5px;
+  position: fixed;
+  height: 100vh;
+}
+
+.ladoCentral {
+  max-height: 100vh;
+  width: 72vw;
+  border-right: solid rgb(219, 219, 219) 0.5px;
+
+}
+
+.heart {
+  color: #FF3040;
+}
+
+.feed {
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-left: 30vw;
+  margin-right: 13vw;
+  padding: 0.2%;
+  margin-top: 5%;
+}
+
+.imgFeed {
+  width: 100%;
+  height: 70vh;
+}
+
+.itemdireito {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  width: 100%;
+  color: black;
+  margin-bottom: 3%;
+}
+
+.conteudodireito {
+  margin-top: 3%;
+
+}
+
+.sugestao {
+  display: flex;
+  justify-content: space-between;
+  margin: 3% 0% 5% 5%;
+  font-size: 95%;
+  color: rgb(86, 86, 86);
+  font-weight: bold;
+}
+
+.negrito{
+font-weight: bold;
+}
+
+.opcao{
+  color: rgb(77, 156, 252);
+  font-weight: bold;
+}
+
+.infousuario{
+  font-size: 90%;
+}
+
+.user {
+  display: flex;
+  gap: 10px;
+}
+
+.itemdireito img {
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+}
+
+.BottomMenu {
+  margin-top: 25%;
+  margin-left: 10%;
+  flex-direction: column;
+  font-size: 140%;
+
+}
+
+.border {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+  border-radius: 100%;
+  background: linear-gradient(#c82d8e, #f99d5c);
+}
+
+.BottomMenu ul li {
+  list-style: none;
+}
+
+.WrapMenu {
+  margin-left: 10%;
+  flex-direction: column;
+  font-size: 140%;
+  display: flex;
+
+}
+
+
+.WrapMenu ul li {
+  list-style: none;
+}
+
+.MarginMenu {
+  margin-bottom: 10%;
+}
+
+
+.insta-name {
+  max-width: 50%;
+  margin: 7%;
+  margin-top: 10%;
+}
+
+
+.storyFeed {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  margin-top: 3vh;
+}
+
+.story-order {
+  display: flex;
+  gap: 20px;
+  margin: 1% 1%;
+  margin-left: 26vw;
+  margin-right: 19vw;
+}
+
+.profilePic {
+  align-items: center;
+  justify-content: center;
+  width: 73px;
+  height: 73px;
+  border-radius: 50%;
+  border: 1.9px white solid;
+}
+
+.profilePicfeed2 {
+  align-items: center;
+  justify-content: center;
+  width: 85%;
+  border-radius: 50%;
+  border: 1.9px white solid;
+}
+
+.profilePicfeed {
+  align-items: center;
+  justify-content: center;
+  width: 10%;
+  border-radius: 50%;
+  border: 1.9px white solid;
+
+}
+
+.fundoImageUser {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 82px;
+  height: 82px;
+  border-radius: 100%;
+  background: linear-gradient(#c82d8e, #f99d5c);
+}
+
+.text {
+  font-size: 80%;
+}
+
+i {
+  font-size: 130%;
+
+}
+
+.infotop {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1%;
+}
+
+.space-icons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1%;
+  font-size: 160%;
+}
+
+.iconsPost {
+  display: flex;
+  margin-right: 2%;
+  gap: 7px;
+  margin-left: 1%;
+  margin-bottom: 1%;
+}
+
+
+#save {
+  color: rgb(221, 221, 0);
+}
+
+.descripition {
+  display: flex;
+  flex-direction: column;
+  margin-left: 1%;
+  font-size: 100%;
+  margin-bottom: 2%;
+}
+
+.Comment {
+  display: flex;
+  gap: 7px;
+  margin: 2%;
+  font-size: 90%;
+}
+
+.sal {
+  color: rgb(103, 103, 103);
+  font-size: 90%;
+  margin-left: 3%;
+}
+
+.bold {
+  font-weight: bold;
+  margin: 1% 1%;
+}
+
+.cima {
+  display: flex;
+  margin-right: 2%;
+  gap: 7px;
+}
+
+@media screen and (max-width: 900px) {
+
+  .story-order {
+    margin-left: 21vw;
+    overflow: hidden;
+    width: 70vw;
+    gap: 30px;
+  }
+
+  .conteudodireito {
+    visibility: hidden;
+    display: none;
+  }
+
+  .text {
+    padding-top: 10px;
+    font-size: 0;
+    max-height: 100vh;
+  }
+
+  .icon {
+    font-size: 125%;
+    margin-top: 100px;
+    max-height: 100vh;
+    margin-left: 30%;
+  }
+
+
+  .WrapMenu {
+    max-height: 90vh;
+    margin-top: 15%;
+    height: max-content;
+  }
+
+  .BottomMenu {
+    margin-top: 90%;
+  }
+
+  .storyFeed {
+    max-width: 60px;
+  }
+
+  .insta-name {
+    max-width: 80%;
+
+  }
+
+  .feed {
+    margin-top: 10%;
+    align-items: center;
+    flex-direction: column;
+    margin-left: 33vw;
+    margin-right: 0vw;
+  }
+
+}
